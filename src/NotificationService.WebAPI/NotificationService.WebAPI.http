@@ -1,0 +1,23 @@
+### SendEmail
+POST {{host_address}}/api/v1/email/send
+Accept: application/json
+Content-Type: application/json
+
+{
+  "to": [
+    "test@test.com"
+  ], 
+  "subject": "Test Email", 
+  "content": "This is a test email"
+}
+
+### SendSMS
+POST {{host_address}}/api/v1/sms/send
+Accept: application/json
+Content-Type: application/json
+
+{
+  "phoneNumber": "+12007702024", 
+  "content": "This is a test SMS"
+}
+
